@@ -3,7 +3,7 @@
 body {
   font-family: "Manrope", sans-serif;
   max-width: 1440px;
-  margin: auto 0;
+  margin: 0 auto;
   font-size: 28px;
   box-sizing: border-box;
 }
@@ -66,12 +66,45 @@ h1 {
 }
 
 button > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article > button:hover {
-    background-color: hsl(150, 100%, 66%);
-    box-shadow: 0 0 20px 10px hsl(150, 100%, 66%);
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 20px 10px hsl(150, 100%, 66%);
+}
+
+@media all and (max-width: 500px) and (min-width: 375px) {
+  article {
+    width: 80%;
+  }
+
+  article > img:nth-child(3) {
+    display: none;
+  }
+
+  article > img:nth-child(4) {
+    display: block;
+    margin: 25px auto 50px auto;
+  }
+
+  button {
+    right: 40%;
+  }
+}
+
+@media all and (max-width: 374px) {
+  article {
+    width: 100%;
+  }
+
+  article > img:nth-child(3) {
+    width: 100%;
+  }
+
+  button {
+    right: 41%;
+  }
 }
